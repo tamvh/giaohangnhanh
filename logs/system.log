@@ -1114,3 +1114,13 @@ Caused by: org.apache.commons.configuration.ConfigurationException: Cannot locat
 2017-10-11 18:47:05  INFO local:839 - local: Created a new connection
 2017-10-11 18:47:05  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
 2017-10-11 18:47:05  INFO local:839 - local: Created a new connection
+2017-10-11 18:50:05  INFO local:839 - local: Destroyed connection
+2017-10-11 18:50:05  INFO local:839 - local: Destroyed connection
+2017-10-11 18:50:05  INFO local:839 - local: Destroyed connection
+2017-10-11 18:50:05  INFO local:839 - local: Destroyed connection
+2017-10-11 18:50:05  INFO local:839 - local: Destroyed connection
+2017-10-11 18:50:05  INFO local:839 - local: Destroyed connection
+2017-10-11 18:50:05  INFO local:839 - local: Destroyed connection
+2017-10-11 18:50:10  INFO local:839 - local: Destroyed connection
+2017-10-11 18:50:10  INFO local:839 - local: Destroyed connection
+2017-10-11 18:50:10  INFO local:839 - local: Destroyed connection

@@ -62,8 +62,8 @@ public class WebServer implements Runnable{
             ServletContextHandler servletContext = new ServletContextHandler(ServletContextHandler.NO_SESSIONS);
             servletContext.setContextPath("/");
                       
-            servletContext.addServlet(LoginController.class, "/v001/vpp/api/login/*");
-            servletContext.addServlet(CabinetController.class, "/v001/vpp/api/cabinet/*");
+            servletContext.addServlet(LoginController.class, "/v001/ghn/api/login/*");
+            servletContext.addServlet(CabinetController.class, "/v001/ghn/api/cabinet/*");
 
             ResourceHandler resource_handler = new ResourceHandler();
             resource_handler.setResourceBase("./static/");
