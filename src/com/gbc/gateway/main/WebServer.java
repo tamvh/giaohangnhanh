@@ -8,6 +8,7 @@ package com.gbc.gateway.main;
 import com.gbc.gateway.common.Config;
 import com.gbc.gateway.controller.LoginController;
 import com.gbc.gateway.controller.CabinetController;
+import com.gbc.gateway.controller.BoxController;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 import org.apache.log4j.Logger;
@@ -64,6 +65,7 @@ public class WebServer implements Runnable{
                       
             servletContext.addServlet(LoginController.class, "/v001/ghn/api/login/*");
             servletContext.addServlet(CabinetController.class, "/v001/ghn/api/cabinet/*");
+            servletContext.addServlet(BoxController.class, "/v001/ghn/api/box/*");
 
             ResourceHandler resource_handler = new ResourceHandler();
             resource_handler.setResourceBase("./static/");

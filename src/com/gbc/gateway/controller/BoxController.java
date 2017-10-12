@@ -8,9 +8,14 @@ package com.gbc.gateway.controller;
 import com.gbc.gateway.common.AppConst;
 import com.gbc.gateway.common.CommonModel;
 import com.gbc.gateway.common.JsonParserUtil;
+import com.gbc.gateway.data.Box;
 import com.gbc.gateway.model.BoxModel;
+import com.gbc.gateway.model.HistoryBoxModel;
+import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -23,7 +28,8 @@ import org.apache.log4j.Logger;
  */
 public class BoxController extends HttpServlet {
     protected final Logger logger = Logger.getLogger(this.getClass());
-
+    private static final Gson _gson = new Gson();
+    
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         handle(req, resp);
@@ -51,13 +57,25 @@ public class BoxController extends HttpServlet {
             case "update_status_box":
                 content = updateStatusBox(req, data);
                 break;
+            case "history_open_box":
+                content = historyOpenBox(req, data);
+                break;
+            case "insert_box":
+                content = insertBox(req, data);
+                break;
+            case "delete_box":
+                content = deleteBox(req, data);
+                break;
+            case "get_list_box":
+                content = getListBoxByCabinetId(req, data);
+                break;
         }
 
         CommonModel.out(content, resp);
     }
 
     private String updateStatusBox(HttpServletRequest req, String data) {
-        String content = null;
+        String content;
         int ret = AppConst.ERROR_GENERIC;
         try {
             JsonObject jsonObject = JsonParserUtil.parseJsonObject(data);
@@ -86,6 +104,131 @@ public class BoxController extends HttpServlet {
             content = CommonModel.FormatResponse(ret, ex.getMessage());
         }
         
+        return content;
+    }
+
+    private String historyOpenBox(HttpServletRequest req, String data) {
+        String content;
+        int ret = AppConst.ERROR_GENERIC;
+        try {
+            JsonObject jsonObject = JsonParserUtil.parseJsonObject(data);
+            if (jsonObject == null) {
+                content = CommonModel.FormatResponse(ret, "Invalid parameter");
+            } else {                
+                int box_id = jsonObject.get("box_id").getAsInt();
+                int cabinet_id = jsonObject.get("cabinet_id").getAsInt();
+                String opencode = jsonObject.get("opencode").getAsString();
+                
+                if (cabinet_id <= 0 || box_id <= 0 || opencode.isEmpty()) {
+                    content = CommonModel.FormatResponse(ret, "Invalid parameter");
+                } else {
+                    ret = HistoryBoxModel.getInstance().insertHistoryBox(box_id, cabinet_id, opencode);
+                    switch (ret) {
+                        case 0:         
+                            content = CommonModel.FormatResponse(AppConst.NO_ERROR, "insert history open box success");
+                            break;                 
+                        default:
+                            content = CommonModel.FormatResponse(AppConst.ERROR_GENERIC, "insert history open box failed");
+                            break;
+                    }
+                }
+            }
+        } catch (IOException ex) {
+            logger.error(getClass().getSimpleName() + ".historyOpenBox: " + ex.getMessage(), ex);
+            content = CommonModel.FormatResponse(ret, ex.getMessage());
+        }
+        
+        return content;
+    }
+
+    private String insertBox(HttpServletRequest req, String data) {
+        String content;
+        int ret = AppConst.ERROR_GENERIC;
+        try {
+            JsonObject jsonObject = JsonParserUtil.parseJsonObject(data);
+            if (jsonObject == null) {
+                content = CommonModel.FormatResponse(ret, "Invalid parameter");
+            } else {                
+                Box box = _gson.fromJson(jsonObject.get("box").getAsJsonObject(), Box.class);
+                if (box == null) {
+                    content = CommonModel.FormatResponse(ret, "Invalid parameter");
+                } else {
+                    ret = BoxModel.getInstance().insertBox(box);
+                    if(ret == 0) {
+                        content = CommonModel.FormatResponse(AppConst.NO_ERROR, "insert box success");
+                    } else {
+                        content = CommonModel.FormatResponse(AppConst.NO_ERROR, "insert box failed");
+                    }
+                }
+            }
+        } catch (IOException ex) {
+            logger.error(getClass().getSimpleName() + ".insertBox: " + ex.getMessage(), ex);
+            content = CommonModel.FormatResponse(ret, ex.getMessage());
+        }
+        return content;
+    }
+
+    private String deleteBox(HttpServletRequest req, String data) {
+        String content;
+        int ret = AppConst.ERROR_GENERIC;
+        try {
+            JsonObject jsonObject = JsonParserUtil.parseJsonObject(data);
+            if (jsonObject == null) {
+                content = CommonModel.FormatResponse(ret, "Invalid parameter");
+            } else {                
+                int box_id = jsonObject.get("box_id").getAsInt();
+                
+                if (box_id <= 0) {
+                    content = CommonModel.FormatResponse(ret, "Invalid parameter");
+                } else {
+                    ret = BoxModel.getInstance().deleteBoxbyBoxId(box_id);
+                    switch (ret) {
+                        case 0:         
+                            content = CommonModel.FormatResponse(AppConst.NO_ERROR, "delete box success");
+                            break;                 
+                        default:
+                            content = CommonModel.FormatResponse(AppConst.ERROR_GENERIC, "delete box failed");
+                            break;
+                    }
+                }
+            }
+        } catch (IOException ex) {
+            logger.error(getClass().getSimpleName() + ".deleteBox: " + ex.getMessage(), ex);
+            content = CommonModel.FormatResponse(ret, ex.getMessage());
+        }
+        
+        return content;
+    }
+
+    private String getListBoxByCabinetId(HttpServletRequest req, String data) {
+        String content;
+        int ret = AppConst.ERROR_GENERIC;
+        try {
+            JsonObject jsonObject = JsonParserUtil.parseJsonObject(data);
+            if (jsonObject == null) {
+                content = CommonModel.FormatResponse(ret, "Invalid parameter");
+            } else {                
+                int cabinet_id = jsonObject.get("cabinet_id").getAsInt();
+                
+                if (cabinet_id <= 0) {
+                    content = CommonModel.FormatResponse(ret, "Invalid parameter");
+                } else {
+                    List<Box> list_box = new ArrayList<>();
+                    ret = BoxModel.getInstance().getListBoxbyCabinetId(list_box, cabinet_id);
+                    switch (ret) {
+                        case 0:         
+                            content = CommonModel.FormatResponse(AppConst.NO_ERROR, "get list box success", list_box);
+                            break;                 
+                        default:
+                            content = CommonModel.FormatResponse(AppConst.ERROR_GENERIC, "get list box failed");
+                            break;
+                    }
+                }
+            }
+        } catch (IOException ex) {
+            logger.error(getClass().getSimpleName() + ".getListBoxByCabinetId: " + ex.getMessage(), ex);
+            content = CommonModel.FormatResponse(ret, ex.getMessage());
+        }
         return content;
     }
 }

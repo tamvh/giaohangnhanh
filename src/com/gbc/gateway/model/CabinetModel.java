@@ -52,8 +52,8 @@ public class CabinetModel {
             String accountTableName = "cabinet";
             connection = MySqlFactory.getConnection();
             stmt = connection.createStatement();
-            queryStr = String.format("INSERT INTO %1$s (cabinet_name, nlat, nlong) VALUES ('%2$s', %3$d, %4$d)",
-                    accountTableName, cabinet.getName(), cabinet.getNlat(), cabinet.getNlong());
+            queryStr = String.format("INSERT INTO %1$s (cabinet_name, nlat, nlong, address) VALUES ('%2$s', %3$d, %4$d, %5$s)",
+                    accountTableName, cabinet.getName(), cabinet.getNlat(), cabinet.getNlong(), cabinet.getAddress());
             System.out.println("Query insertCabinet: " + queryStr);
             int result = stmt.executeUpdate(queryStr);
             if(result > 0) {
@@ -70,7 +70,7 @@ public class CabinetModel {
         return ret;
     }
     
-    public int deleteCabinetById(int cabinet_id) {
+    public int deleteCabinetById(int cabinet_id) throws IOException {
         int ret = -1;
         Connection connection = null;
         Statement stmt = null;
@@ -80,10 +80,11 @@ public class CabinetModel {
             String queryStr;
             connection = MySqlFactory.getConnection();
             stmt = connection.createStatement();
-            queryStr = String.format("DELETE `cabinet` WHERE `cabinet_id` = '%1$d'", cabinet_id);
+            queryStr = String.format("DELETE FROM `cabinet` WHERE `cabinet_id` = %1$d", cabinet_id);
             System.out.println("Query deleteCabinetById: " + queryStr);
             int result = stmt.executeUpdate(queryStr);
             if(result > 0) {
+                BoxModel.getInstance().delelteBoxByCabinetId(cabinet_id);
                 ret = 0;
             }
         } catch (SQLException ex) {

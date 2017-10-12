@@ -13,9 +13,18 @@ public class Box {
     private int id;
     private String label;
     private int status;
+    private int cabinet_id;
     private String opencode;
     private String locktime;
     private String attacheddata;
+    
+    public int getCabinet_id() {
+        return cabinet_id;
+    }
+
+    public void setCabinet_id(int cabinet_id) {
+        this.cabinet_id = cabinet_id;
+    }
     
     public int getId() {
         return id;

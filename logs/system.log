@@ -1182,3 +1182,417 @@ Caused by: org.apache.commons.configuration.ConfigurationException: Cannot locat
 2017-10-12 14:36:30  INFO AbstractConnector:320 - Stopped ServerConnector@670094dd{HTTP/1.1,[http/1.1]}{0.0.0.0:8181}
 2017-10-12 14:36:30  INFO ContextHandler:932 - Stopped o.e.j.s.ServletContextHandler@59a85f9c{/,null,UNAVAILABLE}
 2017-10-12 14:36:30  INFO ContextHandler:932 - Stopped o.e.j.s.h.ContextHandler@42047293{/static,null,UNAVAILABLE}
+2017-10-12 15:46:06  INFO log:192 - Logging initialized @879ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-10-12 15:46:06  INFO WebServer:60 - Start server...
+2017-10-12 15:46:07  INFO Server:372 - jetty-9.4.1.v20170120
+2017-10-12 15:46:07  INFO ContextHandler:791 - Started o.e.j.s.h.ContextHandler@5ff81216{/static,null,AVAILABLE}
+2017-10-12 15:46:07  INFO ContextHandler:791 - Started o.e.j.s.ServletContextHandler@181d13fe{/,null,AVAILABLE}
+2017-10-12 15:46:07  INFO AbstractConnector:280 - Started ServerConnector@15b824cc{HTTP/1.1,[http/1.1]}{0.0.0.0:8181}
+2017-10-12 15:46:07  INFO Server:444 - Started @1706ms
+2017-10-12 15:49:45  INFO ServiceDaemon:30 - Shutdown thread before webserver getinstance
+2017-10-12 15:49:45  INFO AbstractConnector:320 - Stopped ServerConnector@15b824cc{HTTP/1.1,[http/1.1]}{0.0.0.0:8181}
+2017-10-12 15:49:45  INFO ContextHandler:932 - Stopped o.e.j.s.ServletContextHandler@181d13fe{/,null,UNAVAILABLE}
+2017-10-12 15:49:45  INFO ContextHandler:932 - Stopped o.e.j.s.h.ContextHandler@5ff81216{/static,null,UNAVAILABLE}
+2017-10-12 15:50:02  INFO log:192 - Logging initialized @2491ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-10-12 15:50:02  INFO WebServer:60 - Start server...
+2017-10-12 15:50:02  INFO Server:372 - jetty-9.4.1.v20170120
+2017-10-12 15:50:02  INFO ContextHandler:791 - Started o.e.j.s.h.ContextHandler@36a93799{/static,null,AVAILABLE}
+2017-10-12 15:50:02  INFO ContextHandler:791 - Started o.e.j.s.ServletContextHandler@3c41f59a{/,null,AVAILABLE}
+2017-10-12 15:50:02  INFO AbstractConnector:280 - Started ServerConnector@3484a3{HTTP/1.1,[http/1.1]}{0.0.0.0:8181}
+2017-10-12 15:50:02  INFO Server:444 - Started @2939ms
+2017-10-12 15:57:17  INFO log:192 - Logging initialized @885ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-10-12 15:57:17  INFO WebServer:60 - Start server...
+2017-10-12 15:57:17  INFO Server:372 - jetty-9.4.1.v20170120
+2017-10-12 15:57:17  INFO ContextHandler:791 - Started o.e.j.s.h.ContextHandler@198ce2d4{/static,null,AVAILABLE}
+2017-10-12 15:57:17  INFO ContextHandler:791 - Started o.e.j.s.ServletContextHandler@477859e8{/,null,AVAILABLE}
+2017-10-12 15:57:17  INFO AbstractConnector:280 - Started ServerConnector@78b43aed{HTTP/1.1,[http/1.1]}{0.0.0.0:8181}
+2017-10-12 15:57:17  INFO Server:444 - Started @1280ms
+2017-10-12 15:59:30  INFO ServiceDaemon:30 - Shutdown thread before webserver getinstance
+2017-10-12 15:59:30  INFO AbstractConnector:320 - Stopped ServerConnector@78b43aed{HTTP/1.1,[http/1.1]}{0.0.0.0:8181}
+2017-10-12 15:59:30  INFO ContextHandler:932 - Stopped o.e.j.s.ServletContextHandler@477859e8{/,null,UNAVAILABLE}
+2017-10-12 15:59:30  INFO ContextHandler:932 - Stopped o.e.j.s.h.ContextHandler@198ce2d4{/static,null,UNAVAILABLE}
+2017-10-12 15:59:40  INFO log:192 - Logging initialized @721ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-10-12 15:59:40  INFO WebServer:60 - Start server...
+2017-10-12 15:59:40  INFO Server:372 - jetty-9.4.1.v20170120
+2017-10-12 15:59:40  INFO ContextHandler:791 - Started o.e.j.s.h.ContextHandler@7daaf691{/static,null,AVAILABLE}
+2017-10-12 15:59:40  INFO ContextHandler:791 - Started o.e.j.s.ServletContextHandler@695b40dc{/,null,AVAILABLE}
+2017-10-12 15:59:40  INFO AbstractConnector:280 - Started ServerConnector@68ed0948{HTTP/1.1,[http/1.1]}{0.0.0.0:8181}
+2017-10-12 15:59:40  INFO Server:444 - Started @1060ms
+2017-10-12 16:00:20  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:00:21  INFO local:839 - local: Created a new connection
+2017-10-12 16:00:36  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:00:36  INFO local:839 - local: Created a new connection
+2017-10-12 16:00:36  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:00:36  INFO local:839 - local: Created a new connection
+2017-10-12 16:00:36  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:00:36  INFO local:839 - local: Created a new connection
+2017-10-12 16:00:36  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:00:36  INFO local:839 - local: Created a new connection
+2017-10-12 16:00:36  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:00:36  INFO local:839 - local: Created a new connection
+2017-10-12 16:00:36  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:00:36  INFO local:839 - local: Created a new connection
+2017-10-12 16:00:36  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:00:36  INFO local:839 - local: Created a new connection
+2017-10-12 16:00:36  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:00:36  INFO local:839 - local: Created a new connection
+2017-10-12 16:00:36  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:00:36  INFO local:839 - local: Created a new connection
+2017-10-12 16:03:36  INFO local:839 - local: Destroyed connection
+2017-10-12 16:03:36  INFO local:839 - local: Destroyed connection
+2017-10-12 16:03:36  INFO local:839 - local: Destroyed connection
+2017-10-12 16:03:36  INFO local:839 - local: Destroyed connection
+2017-10-12 16:03:41  INFO local:839 - local: Destroyed connection
+2017-10-12 16:03:41  INFO local:839 - local: Destroyed connection
+2017-10-12 16:03:41  INFO local:839 - local: Destroyed connection
+2017-10-12 16:03:41  INFO local:839 - local: Destroyed connection
+2017-10-12 16:03:41  INFO local:839 - local: Destroyed connection
+2017-10-12 16:07:29  INFO ServiceDaemon:30 - Shutdown thread before webserver getinstance
+2017-10-12 16:07:29  INFO AbstractConnector:320 - Stopped ServerConnector@68ed0948{HTTP/1.1,[http/1.1]}{0.0.0.0:8181}
+2017-10-12 16:07:29  INFO ContextHandler:932 - Stopped o.e.j.s.ServletContextHandler@695b40dc{/,null,UNAVAILABLE}
+2017-10-12 16:07:29  INFO ContextHandler:932 - Stopped o.e.j.s.h.ContextHandler@7daaf691{/static,null,UNAVAILABLE}
+2017-10-12 16:07:39  INFO log:192 - Logging initialized @764ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-10-12 16:07:39  INFO WebServer:60 - Start server...
+2017-10-12 16:07:39  INFO Server:372 - jetty-9.4.1.v20170120
+2017-10-12 16:07:39  INFO ContextHandler:791 - Started o.e.j.s.h.ContextHandler@26c2b4e{/static,null,AVAILABLE}
+2017-10-12 16:07:39  INFO ContextHandler:791 - Started o.e.j.s.ServletContextHandler@51532e3b{/,null,AVAILABLE}
+2017-10-12 16:07:39  INFO AbstractConnector:280 - Started ServerConnector@10ec5113{HTTP/1.1,[http/1.1]}{0.0.0.0:8181}
+2017-10-12 16:07:39  INFO Server:444 - Started @1336ms
+2017-10-12 16:07:42  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:07:43  INFO local:839 - local: Created a new connection
+2017-10-12 16:07:43  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:07:43  INFO local:839 - local: Created a new connection
+2017-10-12 16:07:43  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:07:43  INFO local:839 - local: Created a new connection
+2017-10-12 16:07:43  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:07:43  INFO local:839 - local: Created a new connection
+2017-10-12 16:07:43  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:07:43  INFO local:839 - local: Created a new connection
+2017-10-12 16:07:43  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:07:43  INFO local:839 - local: Created a new connection
+2017-10-12 16:07:43  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:07:43  INFO local:839 - local: Created a new connection
+2017-10-12 16:07:43  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:07:43  INFO local:839 - local: Created a new connection
+2017-10-12 16:07:43  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:07:43  INFO local:839 - local: Created a new connection
+2017-10-12 16:07:43  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:07:43  INFO local:839 - local: Created a new connection
+2017-10-12 16:08:15  INFO ServiceDaemon:30 - Shutdown thread before webserver getinstance
+2017-10-12 16:08:15  INFO AbstractConnector:320 - Stopped ServerConnector@10ec5113{HTTP/1.1,[http/1.1]}{0.0.0.0:8181}
+2017-10-12 16:08:15  INFO ContextHandler:932 - Stopped o.e.j.s.ServletContextHandler@51532e3b{/,null,UNAVAILABLE}
+2017-10-12 16:08:15  INFO ContextHandler:932 - Stopped o.e.j.s.h.ContextHandler@26c2b4e{/static,null,UNAVAILABLE}
+2017-10-12 16:08:36  INFO log:192 - Logging initialized @846ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-10-12 16:08:36  INFO WebServer:60 - Start server...
+2017-10-12 16:08:37  INFO Server:372 - jetty-9.4.1.v20170120
+2017-10-12 16:08:37  INFO ContextHandler:791 - Started o.e.j.s.h.ContextHandler@50e7b166{/static,null,AVAILABLE}
+2017-10-12 16:08:37  INFO ContextHandler:791 - Started o.e.j.s.ServletContextHandler@47878cbc{/,null,AVAILABLE}
+2017-10-12 16:08:37  INFO AbstractConnector:280 - Started ServerConnector@773f8c3e{HTTP/1.1,[http/1.1]}{0.0.0.0:8181}
+2017-10-12 16:08:37  INFO Server:444 - Started @1177ms
+2017-10-12 16:08:54  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:08:55  INFO local:839 - local: Created a new connection
+2017-10-12 16:09:54  INFO log:192 - Logging initialized @840ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-10-12 16:09:54  INFO WebServer:60 - Start server...
+2017-10-12 16:09:54  INFO Server:372 - jetty-9.4.1.v20170120
+2017-10-12 16:09:54  INFO ContextHandler:791 - Started o.e.j.s.h.ContextHandler@42047293{/static,null,AVAILABLE}
+2017-10-12 16:09:54  INFO ContextHandler:791 - Started o.e.j.s.ServletContextHandler@59a85f9c{/,null,AVAILABLE}
+2017-10-12 16:09:54  INFO AbstractConnector:280 - Started ServerConnector@670094dd{HTTP/1.1,[http/1.1]}{0.0.0.0:8181}
+2017-10-12 16:09:54  INFO Server:444 - Started @1448ms
+2017-10-12 16:09:55  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:09:55  INFO local:839 - local: Created a new connection
+2017-10-12 16:09:55  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:09:55  INFO local:839 - local: Created a new connection
+2017-10-12 16:09:55  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:09:55  INFO local:839 - local: Created a new connection
+2017-10-12 16:09:55  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:09:55  INFO local:839 - local: Created a new connection
+2017-10-12 16:09:55  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:09:55  INFO local:839 - local: Created a new connection
+2017-10-12 16:09:55  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:09:55  INFO local:839 - local: Created a new connection
+2017-10-12 16:09:55  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:09:55  INFO local:839 - local: Created a new connection
+2017-10-12 16:09:55  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:09:55  INFO local:839 - local: Created a new connection
+2017-10-12 16:09:55  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:09:55  INFO local:839 - local: Created a new connection
+2017-10-12 16:09:55  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:09:55  INFO local:839 - local: Created a new connection
+2017-10-12 16:11:06  INFO ServiceDaemon:30 - Shutdown thread before webserver getinstance
+2017-10-12 16:11:06  INFO AbstractConnector:320 - Stopped ServerConnector@670094dd{HTTP/1.1,[http/1.1]}{0.0.0.0:8181}
+2017-10-12 16:11:06  INFO ContextHandler:932 - Stopped o.e.j.s.ServletContextHandler@59a85f9c{/,null,UNAVAILABLE}
+2017-10-12 16:11:06  INFO ContextHandler:932 - Stopped o.e.j.s.h.ContextHandler@42047293{/static,null,UNAVAILABLE}
+2017-10-12 16:26:33  INFO log:192 - Logging initialized @737ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-10-12 16:26:33  INFO WebServer:60 - Start server...
+2017-10-12 16:26:33  INFO Server:372 - jetty-9.4.1.v20170120
+2017-10-12 16:26:33  INFO ContextHandler:791 - Started o.e.j.s.h.ContextHandler@3423907d{/static,null,AVAILABLE}
+2017-10-12 16:26:33  INFO ContextHandler:791 - Started o.e.j.s.ServletContextHandler@d0898ac{/,null,AVAILABLE}
+2017-10-12 16:26:33  INFO AbstractConnector:280 - Started ServerConnector@23e81c7c{HTTP/1.1,[http/1.1]}{0.0.0.0:8181}
+2017-10-12 16:26:33  INFO Server:444 - Started @1312ms
+2017-10-12 16:26:45  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:26:45  INFO local:839 - local: Created a new connection
+2017-10-12 16:26:45  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:26:45  INFO local:839 - local: Created a new connection
+2017-10-12 16:26:45  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:26:45  INFO local:839 - local: Created a new connection
+2017-10-12 16:26:45  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:26:45  INFO local:839 - local: Created a new connection
+2017-10-12 16:26:45  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:26:45  INFO local:839 - local: Created a new connection
+2017-10-12 16:26:45  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:26:45  INFO local:839 - local: Created a new connection
+2017-10-12 16:26:45  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:26:45  INFO local:839 - local: Created a new connection
+2017-10-12 16:26:45  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:26:45  INFO local:839 - local: Created a new connection
+2017-10-12 16:26:45  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:26:45  INFO local:839 - local: Created a new connection
+2017-10-12 16:26:45  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 16:26:45  INFO local:839 - local: Created a new connection
+2017-10-12 16:27:05  INFO ServiceDaemon:30 - Shutdown thread before webserver getinstance
+2017-10-12 16:27:05  INFO AbstractConnector:320 - Stopped ServerConnector@23e81c7c{HTTP/1.1,[http/1.1]}{0.0.0.0:8181}
+2017-10-12 16:27:05  INFO ContextHandler:932 - Stopped o.e.j.s.ServletContextHandler@d0898ac{/,null,UNAVAILABLE}
+2017-10-12 16:27:05  INFO ContextHandler:932 - Stopped o.e.j.s.h.ContextHandler@3423907d{/static,null,UNAVAILABLE}
+2017-10-12 17:37:06  INFO log:192 - Logging initialized @900ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-10-12 17:37:06  INFO WebServer:60 - Start server...
+2017-10-12 17:37:07  INFO Server:372 - jetty-9.4.1.v20170120
+2017-10-12 17:37:07  INFO ContextHandler:791 - Started o.e.j.s.h.ContextHandler@42047293{/static,null,AVAILABLE}
+2017-10-12 17:37:07  INFO ContextHandler:791 - Started o.e.j.s.ServletContextHandler@59a85f9c{/,null,AVAILABLE}
+2017-10-12 17:37:07  INFO AbstractConnector:280 - Started ServerConnector@670094dd{HTTP/1.1,[http/1.1]}{0.0.0.0:8181}
+2017-10-12 17:37:07  INFO Server:444 - Started @1685ms
+2017-10-12 17:37:30  INFO ServiceDaemon:30 - Shutdown thread before webserver getinstance
+2017-10-12 17:37:30  INFO AbstractConnector:320 - Stopped ServerConnector@670094dd{HTTP/1.1,[http/1.1]}{0.0.0.0:8181}
+2017-10-12 17:37:30  INFO ContextHandler:932 - Stopped o.e.j.s.ServletContextHandler@59a85f9c{/,null,UNAVAILABLE}
+2017-10-12 17:37:30  INFO ContextHandler:932 - Stopped o.e.j.s.h.ContextHandler@42047293{/static,null,UNAVAILABLE}
+2017-10-12 17:40:49  INFO log:192 - Logging initialized @860ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-10-12 17:40:49  INFO WebServer:61 - Start server...
+2017-10-12 17:40:49  INFO Server:372 - jetty-9.4.1.v20170120
+2017-10-12 17:40:50  INFO ContextHandler:791 - Started o.e.j.s.h.ContextHandler@6fbfd9f0{/static,null,AVAILABLE}
+2017-10-12 17:40:50  INFO ContextHandler:791 - Started o.e.j.s.ServletContextHandler@59ab62ed{/,null,AVAILABLE}
+2017-10-12 17:40:50  INFO AbstractConnector:280 - Started ServerConnector@79d74b31{HTTP/1.1,[http/1.1]}{0.0.0.0:8181}
+2017-10-12 17:40:50  INFO Server:444 - Started @1543ms
+2017-10-12 17:41:04  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:41:05  INFO local:839 - local: Created a new connection
+2017-10-12 17:41:05  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:41:05  INFO local:839 - local: Created a new connection
+2017-10-12 17:41:05  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:41:05  INFO local:839 - local: Created a new connection
+2017-10-12 17:41:05  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:41:05  INFO local:839 - local: Created a new connection
+2017-10-12 17:41:05  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:41:05  INFO local:839 - local: Created a new connection
+2017-10-12 17:41:05  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:41:05  INFO local:839 - local: Created a new connection
+2017-10-12 17:41:05  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:41:05  INFO local:839 - local: Created a new connection
+2017-10-12 17:41:05  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:41:05  INFO local:839 - local: Created a new connection
+2017-10-12 17:41:05  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:41:05  INFO local:839 - local: Created a new connection
+2017-10-12 17:41:05  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:41:05  INFO local:839 - local: Created a new connection
+2017-10-12 17:41:30  INFO ServiceDaemon:30 - Shutdown thread before webserver getinstance
+2017-10-12 17:41:30  INFO AbstractConnector:320 - Stopped ServerConnector@79d74b31{HTTP/1.1,[http/1.1]}{0.0.0.0:8181}
+2017-10-12 17:41:30  INFO ContextHandler:932 - Stopped o.e.j.s.ServletContextHandler@59ab62ed{/,null,UNAVAILABLE}
+2017-10-12 17:41:30  INFO ContextHandler:932 - Stopped o.e.j.s.h.ContextHandler@6fbfd9f0{/static,null,UNAVAILABLE}
+2017-10-12 17:42:31  INFO log:192 - Logging initialized @770ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-10-12 17:42:31  INFO WebServer:61 - Start server...
+2017-10-12 17:42:32  INFO Server:372 - jetty-9.4.1.v20170120
+2017-10-12 17:42:32  INFO ContextHandler:791 - Started o.e.j.s.h.ContextHandler@4d522aec{/static,null,AVAILABLE}
+2017-10-12 17:42:32  INFO ContextHandler:791 - Started o.e.j.s.ServletContextHandler@3f1451e8{/,null,AVAILABLE}
+2017-10-12 17:42:32  INFO AbstractConnector:280 - Started ServerConnector@4c873d76{HTTP/1.1,[http/1.1]}{0.0.0.0:8181}
+2017-10-12 17:42:32  INFO Server:444 - Started @1372ms
+2017-10-12 17:43:41  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:43:41  INFO local:839 - local: Created a new connection
+2017-10-12 17:43:41  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:43:41  INFO local:839 - local: Created a new connection
+2017-10-12 17:43:41  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:43:41  INFO local:839 - local: Created a new connection
+2017-10-12 17:43:41  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:43:41  INFO local:839 - local: Created a new connection
+2017-10-12 17:43:41  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:43:41  INFO local:839 - local: Created a new connection
+2017-10-12 17:43:41  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:43:41  INFO local:839 - local: Created a new connection
+2017-10-12 17:43:41  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:43:41  INFO local:839 - local: Created a new connection
+2017-10-12 17:43:41  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:43:41  INFO local:839 - local: Created a new connection
+2017-10-12 17:43:41  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:43:41  INFO local:839 - local: Created a new connection
+2017-10-12 17:43:41  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:43:41  INFO local:839 - local: Created a new connection
+2017-10-12 17:43:41  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:43:41  INFO local:839 - local: Created a new connection
+2017-10-12 17:46:41  INFO local:839 - local: Destroyed connection
+2017-10-12 17:46:41  INFO local:839 - local: Destroyed connection
+2017-10-12 17:46:41  INFO local:839 - local: Destroyed connection
+2017-10-12 17:46:41  INFO local:839 - local: Destroyed connection
+2017-10-12 17:46:41  INFO local:839 - local: Destroyed connection
+2017-10-12 17:46:41  INFO local:839 - local: Destroyed connection
+2017-10-12 17:46:41  INFO local:839 - local: Destroyed connection
+2017-10-12 17:46:41  INFO local:839 - local: Destroyed connection
+2017-10-12 17:46:41  INFO local:839 - local: Destroyed connection
+2017-10-12 17:46:41  INFO local:839 - local: Destroyed connection
+2017-10-12 17:48:42  INFO local:839 - local: Destroyed connection
+2017-10-12 17:53:19  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:53:19  INFO local:839 - local: Created a new connection
+2017-10-12 17:54:10  INFO ServiceDaemon:30 - Shutdown thread before webserver getinstance
+2017-10-12 17:54:10  INFO AbstractConnector:320 - Stopped ServerConnector@4c873d76{HTTP/1.1,[http/1.1]}{0.0.0.0:8181}
+2017-10-12 17:54:10  INFO ContextHandler:932 - Stopped o.e.j.s.ServletContextHandler@3f1451e8{/,null,UNAVAILABLE}
+2017-10-12 17:54:10  INFO ContextHandler:932 - Stopped o.e.j.s.h.ContextHandler@4d522aec{/static,null,UNAVAILABLE}
+2017-10-12 17:54:19  INFO log:192 - Logging initialized @689ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-10-12 17:54:19  INFO WebServer:61 - Start server...
+2017-10-12 17:54:19  INFO Server:372 - jetty-9.4.1.v20170120
+2017-10-12 17:54:19  INFO ContextHandler:791 - Started o.e.j.s.h.ContextHandler@2319c19{/static,null,AVAILABLE}
+2017-10-12 17:54:20  INFO ContextHandler:791 - Started o.e.j.s.ServletContextHandler@1a888481{/,null,AVAILABLE}
+2017-10-12 17:54:20  INFO AbstractConnector:280 - Started ServerConnector@487fccee{HTTP/1.1,[http/1.1]}{0.0.0.0:8181}
+2017-10-12 17:54:20  INFO Server:444 - Started @1019ms
+2017-10-12 17:55:14  INFO log:192 - Logging initialized @892ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-10-12 17:55:14  INFO WebServer:61 - Start server...
+2017-10-12 17:55:14  INFO Server:372 - jetty-9.4.1.v20170120
+2017-10-12 17:55:14  INFO ContextHandler:791 - Started o.e.j.s.h.ContextHandler@4bedf2fb{/static,null,AVAILABLE}
+2017-10-12 17:55:14  INFO ContextHandler:791 - Started o.e.j.s.ServletContextHandler@4c42f5f2{/,null,AVAILABLE}
+2017-10-12 17:55:14  INFO AbstractConnector:280 - Started ServerConnector@4c25be4f{HTTP/1.1,[http/1.1]}{0.0.0.0:8181}
+2017-10-12 17:55:14  INFO Server:444 - Started @1536ms
+2017-10-12 17:55:17  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:55:17  INFO local:839 - local: Created a new connection
+2017-10-12 17:55:17  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:55:17  INFO local:839 - local: Created a new connection
+2017-10-12 17:55:17  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:55:17  INFO local:839 - local: Created a new connection
+2017-10-12 17:55:17  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:55:17  INFO local:839 - local: Created a new connection
+2017-10-12 17:55:17  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:55:17  INFO local:839 - local: Created a new connection
+2017-10-12 17:55:17  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:55:17  INFO local:839 - local: Created a new connection
+2017-10-12 17:55:17  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:55:17  INFO local:839 - local: Created a new connection
+2017-10-12 17:55:17  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:55:17  INFO local:839 - local: Created a new connection
+2017-10-12 17:55:17  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:55:17  INFO local:839 - local: Created a new connection
+2017-10-12 17:55:17  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:55:17  INFO local:839 - local: Created a new connection
+2017-10-12 17:55:24  INFO ServiceDaemon:30 - Shutdown thread before webserver getinstance
+2017-10-12 17:55:24  INFO AbstractConnector:320 - Stopped ServerConnector@4c25be4f{HTTP/1.1,[http/1.1]}{0.0.0.0:8181}
+2017-10-12 17:55:24  INFO ContextHandler:932 - Stopped o.e.j.s.ServletContextHandler@4c42f5f2{/,null,UNAVAILABLE}
+2017-10-12 17:55:24  INFO ContextHandler:932 - Stopped o.e.j.s.h.ContextHandler@4bedf2fb{/static,null,UNAVAILABLE}
+2017-10-12 17:55:26  INFO log:192 - Logging initialized @697ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-10-12 17:55:26  INFO WebServer:61 - Start server...
+2017-10-12 17:55:26  INFO Server:372 - jetty-9.4.1.v20170120
+2017-10-12 17:55:26  INFO ContextHandler:791 - Started o.e.j.s.h.ContextHandler@754457da{/static,null,AVAILABLE}
+2017-10-12 17:55:27  INFO ContextHandler:791 - Started o.e.j.s.ServletContextHandler@7ac6d3a7{/,null,AVAILABLE}
+2017-10-12 17:55:27  INFO AbstractConnector:280 - Started ServerConnector@773d368d{HTTP/1.1,[http/1.1]}{0.0.0.0:8181}
+2017-10-12 17:55:27  INFO Server:444 - Started @1144ms
+2017-10-12 17:55:44  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:55:45  INFO local:839 - local: Created a new connection
+2017-10-12 17:56:11  INFO log:192 - Logging initialized @879ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-10-12 17:56:11  INFO WebServer:61 - Start server...
+2017-10-12 17:56:12  INFO Server:372 - jetty-9.4.1.v20170120
+2017-10-12 17:56:12  INFO ContextHandler:791 - Started o.e.j.s.h.ContextHandler@4d522aec{/static,null,AVAILABLE}
+2017-10-12 17:56:12  INFO ContextHandler:791 - Started o.e.j.s.ServletContextHandler@3f1451e8{/,null,AVAILABLE}
+2017-10-12 17:56:12  INFO AbstractConnector:280 - Started ServerConnector@4c873d76{HTTP/1.1,[http/1.1]}{0.0.0.0:8181}
+2017-10-12 17:56:12  INFO Server:444 - Started @1518ms
+2017-10-12 17:56:15  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:56:15  INFO local:839 - local: Created a new connection
+2017-10-12 17:56:15  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:56:15  INFO local:839 - local: Created a new connection
+2017-10-12 17:56:15  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:56:15  INFO local:839 - local: Created a new connection
+2017-10-12 17:56:15  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:56:16  INFO local:839 - local: Created a new connection
+2017-10-12 17:56:16  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:56:16  INFO local:839 - local: Created a new connection
+2017-10-12 17:56:16  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:56:16  INFO local:839 - local: Created a new connection
+2017-10-12 17:56:16  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:56:16  INFO local:839 - local: Created a new connection
+2017-10-12 17:56:16  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:56:16  INFO local:839 - local: Created a new connection
+2017-10-12 17:56:16  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:56:16  INFO local:839 - local: Created a new connection
+2017-10-12 17:56:16  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:56:16  INFO local:839 - local: Created a new connection
+2017-10-12 17:56:20  INFO ServiceDaemon:30 - Shutdown thread before webserver getinstance
+2017-10-12 17:56:20  INFO AbstractConnector:320 - Stopped ServerConnector@4c873d76{HTTP/1.1,[http/1.1]}{0.0.0.0:8181}
+2017-10-12 17:56:20  INFO ContextHandler:932 - Stopped o.e.j.s.ServletContextHandler@3f1451e8{/,null,UNAVAILABLE}
+2017-10-12 17:56:20  INFO ContextHandler:932 - Stopped o.e.j.s.h.ContextHandler@4d522aec{/static,null,UNAVAILABLE}
+2017-10-12 17:56:23  INFO log:192 - Logging initialized @628ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-10-12 17:56:23  INFO WebServer:61 - Start server...
+2017-10-12 17:56:23  INFO Server:372 - jetty-9.4.1.v20170120
+2017-10-12 17:56:23  INFO ContextHandler:791 - Started o.e.j.s.h.ContextHandler@3c086245{/static,null,AVAILABLE}
+2017-10-12 17:56:23  INFO ContextHandler:791 - Started o.e.j.s.ServletContextHandler@f8850df{/,null,AVAILABLE}
+2017-10-12 17:56:23  INFO AbstractConnector:280 - Started ServerConnector@22cfa34b{HTTP/1.1,[http/1.1]}{0.0.0.0:8181}
+2017-10-12 17:56:23  INFO Server:444 - Started @1203ms
+2017-10-12 17:56:52  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:56:52  INFO local:839 - local: Created a new connection
+2017-10-12 17:57:19  INFO log:192 - Logging initialized @614ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-10-12 17:57:19  INFO WebServer:61 - Start server...
+2017-10-12 17:57:19  INFO Server:372 - jetty-9.4.1.v20170120
+2017-10-12 17:57:19  INFO ContextHandler:791 - Started o.e.j.s.h.ContextHandler@6fbfd9f0{/static,null,AVAILABLE}
+2017-10-12 17:57:19  INFO ContextHandler:791 - Started o.e.j.s.ServletContextHandler@59ab62ed{/,null,AVAILABLE}
+2017-10-12 17:57:19  INFO AbstractConnector:280 - Started ServerConnector@cdbd927{HTTP/1.1,[http/1.1]}{0.0.0.0:8181}
+2017-10-12 17:57:19  INFO Server:444 - Started @1125ms
+2017-10-12 17:57:22  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:57:23  INFO local:839 - local: Created a new connection
+2017-10-12 17:57:23  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:57:23  INFO local:839 - local: Created a new connection
+2017-10-12 17:57:23  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:57:23  INFO local:839 - local: Created a new connection
+2017-10-12 17:57:23  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:57:23  INFO local:839 - local: Created a new connection
+2017-10-12 17:57:23  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:57:23  INFO local:839 - local: Created a new connection
+2017-10-12 17:57:23  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:57:23  INFO local:839 - local: Created a new connection
+2017-10-12 17:57:23  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:57:23  INFO local:839 - local: Created a new connection
+2017-10-12 17:57:23  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:57:23  INFO local:839 - local: Created a new connection
+2017-10-12 17:57:23  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:57:23  INFO local:839 - local: Created a new connection
+2017-10-12 17:57:23  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 17:57:23  INFO local:839 - local: Created a new connection
+2017-10-12 17:57:53  INFO ServiceDaemon:30 - Shutdown thread before webserver getinstance
+2017-10-12 17:57:53  INFO AbstractConnector:320 - Stopped ServerConnector@cdbd927{HTTP/1.1,[http/1.1]}{0.0.0.0:8181}
+2017-10-12 17:57:53  INFO ContextHandler:932 - Stopped o.e.j.s.ServletContextHandler@59ab62ed{/,null,UNAVAILABLE}
+2017-10-12 17:57:53  INFO ContextHandler:932 - Stopped o.e.j.s.h.ContextHandler@6fbfd9f0{/static,null,UNAVAILABLE}
+2017-10-12 18:02:02  INFO log:192 - Logging initialized @1010ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-10-12 18:02:02  INFO WebServer:61 - Start server...
+2017-10-12 18:02:02  INFO Server:372 - jetty-9.4.1.v20170120
+2017-10-12 18:02:02  INFO ContextHandler:791 - Started o.e.j.s.h.ContextHandler@4bedf2fb{/static,null,AVAILABLE}
+2017-10-12 18:02:02  INFO ContextHandler:791 - Started o.e.j.s.ServletContextHandler@4c42f5f2{/,null,AVAILABLE}
+2017-10-12 18:02:03  INFO AbstractConnector:280 - Started ServerConnector@4016df0{HTTP/1.1,[http/1.1]}{0.0.0.0:8181}
+2017-10-12 18:02:03  INFO Server:444 - Started @1838ms
+2017-10-12 18:02:13  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 18:02:13  INFO local:839 - local: Created a new connection
+2017-10-12 18:02:13  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 18:02:13  INFO local:839 - local: Created a new connection
+2017-10-12 18:02:13  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 18:02:13  INFO local:839 - local: Created a new connection
+2017-10-12 18:02:13  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 18:02:13  INFO local:839 - local: Created a new connection
+2017-10-12 18:02:13  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 18:02:13  INFO local:839 - local: Created a new connection
+2017-10-12 18:02:13  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 18:02:13  INFO local:839 - local: Created a new connection
+2017-10-12 18:02:13  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 18:02:13  INFO local:839 - local: Created a new connection
+2017-10-12 18:02:13  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 18:02:13  INFO local:839 - local: Created a new connection
+2017-10-12 18:02:13  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 18:02:13  INFO local:839 - local: Created a new connection
+2017-10-12 18:02:13  INFO local:839 - local: Getting connection (user/password): jdbc:mysql://127.0.0.1:3306/giaohangnhanh?autoReconnect=true&failOverReadOnly=false&maxReconnects=10&useUnicode=true&characterEncoding=UTF-8&noAccessToProcedureBodies=true
+2017-10-12 18:02:13  INFO local:839 - local: Created a new connection
+2017-10-12 18:05:13  INFO local:839 - local: Destroyed connection
+2017-10-12 18:05:13  INFO local:839 - local: Destroyed connection
+2017-10-12 18:05:13  INFO local:839 - local: Destroyed connection
+2017-10-12 18:05:13  INFO local:839 - local: Destroyed connection
+2017-10-12 18:05:13  INFO local:839 - local: Destroyed connection
+2017-10-12 18:05:13  INFO local:839 - local: Destroyed connection
+2017-10-12 18:05:13  INFO local:839 - local: Destroyed connection
+2017-10-12 18:05:13  INFO local:839 - local: Destroyed connection
+2017-10-12 18:05:13  INFO local:839 - local: Destroyed connection
+2017-10-12 18:05:38  INFO local:839 - local: Destroyed connection

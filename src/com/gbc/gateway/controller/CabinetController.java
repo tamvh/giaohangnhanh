@@ -54,7 +54,7 @@ public class CabinetController extends HttpServlet {
         String content = "";
         CommonModel.prepareHeader(resp, CommonModel.HEADER_JS);
         switch (cmd) {
-            case "cabinet":
+            case "get_list_cabinet":
                 content = getListCabinet(req);
                 break;
             case "insert_cabinet":
@@ -95,7 +95,7 @@ public class CabinetController extends HttpServlet {
                 content = CommonModel.FormatResponse(ret, "Invalid parameter");
             } else {                
                 Cabinet cabinet = _gson.fromJson(jsonObject.get("cabinet").getAsJsonObject(), Cabinet.class);
-                if (cabinet.getId() <= 0) {
+                if (cabinet == null) {
                     content = CommonModel.FormatResponse(ret, "Invalid parameter");
                 } else {
                     ret = CabinetModel.getInstance().insertCabinet(cabinet);
