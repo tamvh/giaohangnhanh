@@ -41,6 +41,63 @@ public class CabinetModel {
         return _instance;
     }
     
+    public int insertCabinet(Cabinet cabinet) {
+        int ret = -1;
+        Connection connection = null;
+        Statement stmt = null;
+        ResultSet rs = null;
+
+        try {
+            String queryStr;
+            String accountTableName = "cabinet";
+            connection = MySqlFactory.getConnection();
+            stmt = connection.createStatement();
+            queryStr = String.format("INSERT INTO %1$s (cabinet_name, nlat, nlong) VALUES ('%2$s', %3$d, %4$d)",
+                    accountTableName, cabinet.getName(), cabinet.getNlat(), cabinet.getNlong());
+            System.out.println("Query insertCabinet: " + queryStr);
+            int result = stmt.executeUpdate(queryStr);
+            if(result > 0) {
+                ret = 0;
+            }
+        } catch (SQLException ex) {
+            java.util.logging.Logger.getLogger(CabinetModel.class.getName()).log(Level.SEVERE, null, ex);
+            ret = -1;
+        } finally {
+            MySqlFactory.safeClose(rs);
+            MySqlFactory.safeClose(stmt);
+            MySqlFactory.safeClose(connection);
+        }
+        return ret;
+    }
+    
+    public int deleteCabinetById(int cabinet_id) {
+        int ret = -1;
+        Connection connection = null;
+        Statement stmt = null;
+        ResultSet rs = null;
+
+        try {
+            String queryStr;
+            connection = MySqlFactory.getConnection();
+            stmt = connection.createStatement();
+            queryStr = String.format("DELETE `cabinet` WHERE `cabinet_id` = '%1$d'", cabinet_id);
+            System.out.println("Query deleteCabinetById: " + queryStr);
+            int result = stmt.executeUpdate(queryStr);
+            if(result > 0) {
+                ret = 0;
+            }
+        } catch (SQLException ex) {
+            java.util.logging.Logger.getLogger(CabinetModel.class.getName()).log(Level.SEVERE, null, ex);
+            ret = -1;
+        } finally {
+            MySqlFactory.safeClose(rs);
+            MySqlFactory.safeClose(stmt);
+            MySqlFactory.safeClose(connection);
+        }
+        return ret;
+    }
+    
+    
     public int getListCabinet(List<Cabinet> list_cabinet) {
         int ret = -1;
         Connection connection = null;
