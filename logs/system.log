@@ -1596,3 +1596,7 @@ Caused by: org.apache.commons.configuration.ConfigurationException: Cannot locat
 2017-10-12 18:05:13  INFO local:839 - local: Destroyed connection
 2017-10-12 18:05:13  INFO local:839 - local: Destroyed connection
 2017-10-12 18:05:38  INFO local:839 - local: Destroyed connection
+2017-10-12 18:37:59  INFO ServiceDaemon:30 - Shutdown thread before webserver getinstance
+2017-10-12 18:37:59  INFO AbstractConnector:320 - Stopped ServerConnector@4016df0{HTTP/1.1,[http/1.1]}{0.0.0.0:8181}
+2017-10-12 18:37:59  INFO ContextHandler:932 - Stopped o.e.j.s.ServletContextHandler@4c42f5f2{/,null,UNAVAILABLE}
+2017-10-12 18:37:59  INFO ContextHandler:932 - Stopped o.e.j.s.h.ContextHandler@4bedf2fb{/static,null,UNAVAILABLE}
