@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Oct 11, 2017 at 01:46 PM
+-- Generation Time: Oct 12, 2017 at 01:57 PM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
@@ -53,6 +53,14 @@ CREATE TABLE `box` (
   `attacheddata` varchar(64) DEFAULT ''
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `box`
+--
+
+INSERT INTO `box` (`box_id`, `box_label`, `box_status`, `cabinet_id`, `opencode`, `locktime`, `attacheddata`) VALUES
+(1, 'box 1', 0, 1, '12345', '2017-10-12 09:21:36', ''),
+(4, 'box 2', 0, 1, '12345', '2017-10-12 09:23:22', '');
+
 -- --------------------------------------------------------
 
 --
@@ -63,16 +71,39 @@ CREATE TABLE `cabinet` (
   `cabinet_id` int(11) NOT NULL,
   `cabinet_name` varchar(64) NOT NULL,
   `nlat` int(11) NOT NULL DEFAULT '0',
-  `nlong` int(11) NOT NULL DEFAULT '0'
+  `nlong` int(11) NOT NULL DEFAULT '0',
+  `address` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `cabinet`
 --
 
-INSERT INTO `cabinet` (`cabinet_id`, `cabinet_name`, `nlat`, `nlong`) VALUES
-(1, 'giao hang nhanh 1', 10, 100),
-(2, 'giao hang nhanh 2', 10, 100);
+INSERT INTO `cabinet` (`cabinet_id`, `cabinet_name`, `nlat`, `nlong`, `address`) VALUES
+(1, 'giao hang nhanh 1', 10, 100, ''),
+(4, 'giao hang nhanh 4', 20, 34, '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `history_open_box`
+--
+
+CREATE TABLE `history_open_box` (
+  `id` int(11) NOT NULL,
+  `box_id` int(11) NOT NULL,
+  `cabinet_id` int(11) NOT NULL,
+  `opencode` varchar(64) NOT NULL,
+  `locktime` timestamp NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `history_open_box`
+--
+
+INSERT INTO `history_open_box` (`id`, `box_id`, `cabinet_id`, `opencode`, `locktime`) VALUES
+(1, 1, 1, '12345', '2017-10-12 11:02:13'),
+(2, 1, 1, '12345', '2017-10-12 11:02:34');
 
 --
 -- Indexes for dumped tables
@@ -89,8 +120,7 @@ ALTER TABLE `account`
 -- Indexes for table `box`
 --
 ALTER TABLE `box`
-  ADD PRIMARY KEY (`box_id`),
-  ADD UNIQUE KEY `box_label` (`box_label`);
+  ADD PRIMARY KEY (`box_id`);
 
 --
 -- Indexes for table `cabinet`
@@ -98,6 +128,12 @@ ALTER TABLE `box`
 ALTER TABLE `cabinet`
   ADD PRIMARY KEY (`cabinet_id`) USING BTREE,
   ADD UNIQUE KEY `cabinet_name` (`cabinet_name`);
+
+--
+-- Indexes for table `history_open_box`
+--
+ALTER TABLE `history_open_box`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -112,12 +148,17 @@ ALTER TABLE `account`
 -- AUTO_INCREMENT for table `box`
 --
 ALTER TABLE `box`
-  MODIFY `box_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `box_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `cabinet`
 --
 ALTER TABLE `cabinet`
-  MODIFY `cabinet_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;COMMIT;
+  MODIFY `cabinet_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+--
+-- AUTO_INCREMENT for table `history_open_box`
+--
+ALTER TABLE `history_open_box`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

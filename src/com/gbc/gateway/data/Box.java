@@ -13,10 +13,28 @@ public class Box {
     private int id;
     private String label;
     private int status;
+    private int box_type;
+    private int module_id;
     private int cabinet_id;
     private String opencode;
     private String locktime;
     private String attacheddata;
+    
+    public int getModule_id() {
+        return module_id;
+    }
+
+    public void setModule_id(int module_id) {
+        this.module_id = module_id;
+    }
+    
+    public int getBox_type() {
+        return box_type;
+    }
+
+    public void setBox_type(int box_type) {
+        this.box_type = box_type;
+    }
     
     public int getCabinet_id() {
         return cabinet_id;

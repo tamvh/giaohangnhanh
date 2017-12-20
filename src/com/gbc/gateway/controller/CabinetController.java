@@ -9,9 +9,10 @@ import com.gbc.gateway.common.AppConst;
 import com.gbc.gateway.common.CommonModel;
 import com.gbc.gateway.common.JsonParserUtil;
 import com.gbc.gateway.data.Cabinet;
-import com.gbc.gateway.model.AccountModel;
 import com.gbc.gateway.model.CabinetModel;
 import com.google.gson.Gson;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -59,7 +60,10 @@ public class CabinetController extends HttpServlet {
                 break;
             case "insert_cabinet":
                 content = insertCabinet(req, data);
-                break; 
+                break;
+            case "edit_cabinet":
+                content = edit_Cabinet(req, data);
+                break;
             case "delete_cabinet":
                 content = deleteCabinet(req, data);
                 break; 
@@ -100,7 +104,7 @@ public class CabinetController extends HttpServlet {
                 } else {
                     ret = CabinetModel.getInstance().insertCabinet(cabinet);
                     if(ret == 0) {
-                        content = CommonModel.FormatResponse(AppConst.NO_ERROR, "insert cabinet success");
+                        content = CommonModel.FormatResponse(AppConst.NO_ERROR, "insert cabinet success", cabinet);
                     } else {
                         content = CommonModel.FormatResponse(AppConst.NO_ERROR, "insert cabinet failed");
                     }
@@ -121,11 +125,17 @@ public class CabinetController extends HttpServlet {
             if (jsonObject == null) {
                 content = CommonModel.FormatResponse(ret, "Invalid parameter");
             } else {                
-                int cabinet_id = jsonObject.get("cabinet_id").getAsInt();
-                if (cabinet_id <= 0) {
+                JsonArray arrItemIDDel = null;
+                if(jsonObject.has("list_item_id_del")){
+                    JsonElement ele = jsonObject.get("list_item_id_del");
+                    if (ele.isJsonArray()) {
+                        arrItemIDDel = ele.getAsJsonArray();                        
+                    }                    
+                }   
+                if (arrItemIDDel.size() <= 0) {
                     content = CommonModel.FormatResponse(ret, "Invalid parameter");
                 } else {
-                    ret = CabinetModel.getInstance().deleteCabinetById(cabinet_id);
+                    ret = CabinetModel.getInstance().deleteCabinetByListId(arrItemIDDel);
                     if(ret == 0) {
                         content = CommonModel.FormatResponse(AppConst.NO_ERROR, "delete cabinet success");
                     } else {
@@ -135,6 +145,33 @@ public class CabinetController extends HttpServlet {
             }
         } catch (IOException ex) {
             logger.error(getClass().getSimpleName() + ".deleteCabinet: " + ex.getMessage(), ex);
+            content = CommonModel.FormatResponse(ret, ex.getMessage());
+        }
+        return content;
+    }
+
+    private String edit_Cabinet(HttpServletRequest req, String data) {
+        String content;
+        int ret = AppConst.ERROR_GENERIC;
+        try {
+            JsonObject jsonObject = JsonParserUtil.parseJsonObject(data);
+            if (jsonObject == null) {
+                content = CommonModel.FormatResponse(ret, "Invalid parameter");
+            } else {                
+                Cabinet cabinet = _gson.fromJson(jsonObject.get("cabinet").getAsJsonObject(), Cabinet.class);
+                if (cabinet == null) {
+                    content = CommonModel.FormatResponse(ret, "Invalid parameter");
+                } else {                    
+                    ret = CabinetModel.getInstance().editCabinet(cabinet);
+                    if(ret == 0) {
+                        content = CommonModel.FormatResponse(AppConst.NO_ERROR, "edit cabinet success");
+                    } else {
+                        content = CommonModel.FormatResponse(AppConst.NO_ERROR, "edit cabinet failed");
+                    }
+                }
+            }
+        } catch (IOException ex) {
+            logger.error(getClass().getSimpleName() + ".editCabinet: " + ex.getMessage(), ex);
             content = CommonModel.FormatResponse(ret, ex.getMessage());
         }
         return content;

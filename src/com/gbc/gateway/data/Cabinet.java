@@ -5,6 +5,8 @@
  */
 package com.gbc.gateway.data;
 
+import java.util.List;
+
 /**
  *
  * @author tamvh
@@ -15,6 +17,15 @@ public class Cabinet {
     private long nlat;
     private long nlong;
     private String address;
+    private List<Box> list_box;
+
+    public List<Box> getList_box() {
+        return list_box;
+    }
+
+    public void setList_box(List<Box> list_box) {
+        this.list_box = list_box;
+    }
 
     public String getAddress() {
         return address;
